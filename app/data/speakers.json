@@ -20,5 +20,27 @@
         "name": "GitHub",
         "link": "https://github.com/ravichhabra"
     }]
+  },{ 
+    "id": 2,
+    "name": "Soe Thiha",
+    "title": "CEO",
+    "company": "Pwarr",
+    "country": "Myanmar",
+    "photoUrl": "../../images/people/soethiha.jpg",
+    "bio": "coder . dreamer . cloud | #Cambodia #Myanmar #Sweden",
+    "tags": ["GSoC"],
+    "socials": [{
+        "name": "Website",
+        "link": "http://soe.im"
+    }, {
+        "name": "Twitter",
+        "link": "https://twitter.com/soeim"
+    }, {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/soe.im"
+    }, {
+        "name": "GitHub",
+        "link": "https://github.com/soe"
+    }]
   } 
 ]
