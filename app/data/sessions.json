@@ -1,10 +1,10 @@
 [
   {
     "id": 101,
-    "title": "TBD",
+    "title": "Myanmar Language Primer",
     "description": "",
     "speakers": [1],
-    "language": "en",
+    "language": "mm",
     "complexity": "Beginner",
     "presentation": "",
     "video": ""
@@ -21,10 +21,10 @@
   },
   {
     "id": 103,
-    "title": "Planning Android Screens",
-    "description": "This talks is about Android UX when building new screen from scratch. We will go through some common Android screens (like Login / Sign Up / Search / etc.) and see what issues you can face, how popular apps are solving them and what are our options. At the end I will show how to plan & prototype animations with Pixate Studio.",
+    "title": "Experience about building Android App",
+    "description": "This talks is about my Experience about building Android App.",
     "speakers": [3],
-    "language": "en",
+    "language": "mm",
     "complexity": "Beginner",
     "presentation": "",
     "video": ""
@@ -51,10 +51,10 @@
   },
   {
     "id": 106,
-    "title": "TBD",
-    "description": "",
+    "title": "Current trends in web development",
+    "description": "Google technologies such as AngularJS, Go and Polymer will be introduced in the topic.",
     "speakers": [6],
-    "language": "en",
+    "language": "mm",
     "complexity": "Beginner",
     "presentation": "",
     "video": ""
