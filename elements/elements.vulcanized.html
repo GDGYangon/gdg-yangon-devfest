@@ -7288,34 +7288,38 @@ Example:
   Polymer.IronSelectableBehavior = {
 
       /**
-       *  Fired when iron-selector is activated (selected or deselected).
-       *  It is fired before the selected items are changed.
-       *  Cancel the event to abort selection.
+       * Fired when iron-selector is activated (selected or deselected).
+       * It is fired before the selected items are changed.
+       * Cancel the event to abort selection.
        *
        * @event iron-activate
-       *
-       **/
+       */
+
       /**
-       *  Fired when an item is selected
+       * Fired when an item is selected
        *
        * @event iron-select
-       *
-       **/
+       */
+
       /**
-       *  Fired when an item is deselected
+       * Fired when an item is deselected
        *
        * @event iron-deselect
+       */
+
+      /**
+       * Fired when the list of selectable items changes (e.g., items are
+       * added or removed). The detail of the event is a list of mutation
+       * records that describe what changed.
        *
-       **/
+       * @event iron-items-changed
+       */
 
     properties: {
 
       /**
        * If you want to use the attribute value of an element for `selected` instead of the index,
        * set this to the name of the attribute.
-       *
-       * @attribute attrForSelected
-       * @type {string}
        */
       attrForSelected: {
         type: String,
@@ -7324,9 +7328,6 @@ Example:
 
       /**
        * Gets or sets the selected element. The default is to use the index of the item.
-       *
-       * @attribute selected
-       * @type {string}
        */
       selected: {
         type: String,
@@ -7335,9 +7336,6 @@ Example:
 
       /**
        * Returns the currently selected item.
-       *
-       * @attribute selectedItem
-       * @type {Object}
        */
       selectedItem: {
         type: Object,
@@ -7349,10 +7347,6 @@ Example:
        * The event that fires from items when they are selected. Selectable
        * will listen for this event from items and update the selection state.
        * Set to empty string to listen to no events.
-       *
-       * @attribute activateEvent
-       * @type {string}
-       * @default 'tap'
        */
       activateEvent: {
         type: String,
@@ -7363,17 +7357,11 @@ Example:
       /**
        * This is a CSS selector string.  If this is set, only items that match the CSS selector
        * are selectable.
-       *
-       * @attribute selectable
-       * @type {string}
        */
       selectable: String,
 
       /**
        * The class to set on elements when selected.
-       *
-       * @attribute selectedClass
-       * @type {string}
        */
       selectedClass: {
         type: String,
@@ -7382,9 +7370,6 @@ Example:
 
       /**
        * The attribute to set on elements when selected.
-       *
-       * @attribute selectedAttribute
-       * @type {string}
        */
       selectedAttribute: {
         type: String,
@@ -7395,10 +7380,8 @@ Example:
        * The set of excluded elements where the key is the `localName` 
        * of the element that will be ignored from the item list.
        *
-       * @type {object}
        * @default {template: 1}
        */
-
       excludedLocalNames: {
         type: Object,
         value: function() {
@@ -7567,7 +7550,15 @@ Example:
 
     // observe items change under the given node.
     _observeItems: function(node) {
-      var observer = new MutationObserver(function() {
+      // TODO(cdata): Update this when we get distributed children changed.
+      var observer = new MutationObserver(function(mutations) {
+        // Let other interested parties know about the change so that
+        // we don't have to recreate mutation observers everywher.
+        this.fire('iron-items-changed', mutations, {
+          bubbles: false,
+          cancelable: false
+        });
+
         if (this.selected != null) {
           this._updateSelected();
         }
@@ -13975,10 +13966,10 @@ shadow.
 
 Example:
 
-    <paper-button>flat button</paper-button>
-    <paper-button raised>raised button</paper-button>
+    <paper-button>Flat button</paper-button>
+    <paper-button raised>Raised button</paper-button>
     <paper-button noink>No ripple effect</paper-button>
-    <paper-button toggles>toggle-able button</paper-button>
+    <paper-button toggles>Toggle-able button</paper-button>
 
 A button that has `toggles` true will remain `active` after being clicked (and
 will have an `active` attribute set). For more information, see the `Polymer.IronButtonState`
@@ -13996,29 +13987,32 @@ create a button with an icon and some text:
 
 Style the button with CSS as you would a normal DOM element.
 
-    /* make #my-button green with yellow text */
-    #my-button {
-        background: green;
-        color: yellow;
+    paper-button.fancy {
+      background: green;
+      color: yellow;
+    }
+
+    paper-button.fancy:hover {
+      background: lime;
+    }
+
+    paper-button[disabled],
+    paper-button[toggles][active] {
+      background: red;
     }
 
 By default, the ripple is the same color as the foreground at 25% opacity. You may
-customize the color using this selector:
-
-    /* make #my-button use a blue ripple instead of foreground color */
-    #my-button::shadow paper-ripple {
-      color: blue;
-    }
-
-The opacity of the ripple is not customizable via CSS.
+customize the color using the `--paper-button-ink-color` custom property.
 
 The following custom properties and mixins are also available for styling:
 
 Custom property | Description | Default
 ----------------|-------------|----------
-`--paper-button-flat-focus-color` | Background color of a focused flat button | `--paper-grey-200`
+`--paper-button-ink-color` | Background color of the ripple | `Based on the button's color`
 `--paper-button` | Mixin applied to the button | `{}`
-`--paper-button-disabled` | Mixin applied to the disabled button | `{}`
+`--paper-button-disabled` | Mixin applied to the disabled button. Note that you can also use the `paper-button[disabled]` selector | `{}`
+`--paper-button-flat-keyboard-focus` | Mixin applied to a flat button after it's been focused using the keyboard | `{}`
+`--paper-button-raised-keyboard-focus` | Mixin applied to a raised button after it's been focused using the keyboard | `{}`
 
 @demo demo/index.html
 -->
@@ -18599,15 +18593,17 @@ Configuration:
     _constructServiceWorkerUrl: function() {
       var paramsPromises = [];
       var children = Polymer.dom(this).children;
+      var baseUri = new URL(this.baseUri, window.location.href);
+
       for (var i = 0; i < children.length; i++) {
         if (typeof children[i]._getParameters === 'function') {
-          paramsPromises.push(children[i]._getParameters(this.baseUri));
+          paramsPromises.push(children[i]._getParameters(baseUri));
         }
       }
 
       return Promise.all(paramsPromises).then(function(paramsResolutions) {
         var params = {
-          baseURI: this.baseUri,
+          baseURI: baseUri,
           version: this._version
         };
 
@@ -24435,6 +24431,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           },
 
           /**
+           * By default, the dropdown will constrain scrolling on the page
+           * to itself when opened.
+           * Set to true in order to prevent scroll from being constrained
+           * to the dropdown when it opens.
+           */
+          allowOutsideScroll: {
+            type: Boolean,
+            value: false
+          },
+
+          /**
            * We memoize the positionTarget bounding rectangle so that we can
            * limit the number of times it is queried per resize / relayout.
            * @type {?Object}
@@ -24554,7 +24561,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
          * Overridden from `IronOverlayBehavior`.
          */
         _renderOpened: function() {
-          Polymer.IronDropdownScrollManager.pushScrollLock(this);
+          if (!this.allowOutsideScroll) {
+            Polymer.IronDropdownScrollManager.pushScrollLock(this);
+          }
+
           if (!this.noAnimations && this.animationConfig && this.animationConfig.open) {
             this.$.contentWrapper.classList.add('animating');
             this.playAnimation('open');
@@ -25771,12 +25781,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         user-select: none;
         cursor: pointer;
         z-index: 0;
+        padding: 0.7em 0.57em;
 
         @apply(--paper-button);
       }
 
-      .keyboard-focus {
+      :host([raised]) .keyboard-focus {
         font-weight: bold;
+        @apply(--paper-button-raised-keyboard-focus);
+      }
+
+      :host(:not([raised])) .keyboard-focus {
+        font-weight: bold;
+        @apply(--paper-button-flat-keyboard-focus);
       }
 
       :host([disabled]) {
@@ -25792,24 +25809,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: none;
       }
 
+      paper-ripple {
+        color: var(--paper-button-ink-color);
+      }
+
       paper-material {
         border-radius: inherit;
+        @apply(--layout-fit);
       }
 
       .content > ::content * {
         text-transform: inherit;
       }
-
-      .content {
-        padding: 0.7em 0.57em
-      }
     </style>
 
     <paper-ripple></paper-ripple>
 
-    <paper-material class$="[[_computeContentClass(receivedFocusFromKeyboard)]]" elevation="[[_elevation]]" animated="">
-      <content></content>
-    </paper-material>
+    <paper-material class$="[[_computeContentClass(receivedFocusFromKeyboard)]]" elevation="[[_elevation]]" animated=""></paper-material>
+
+    <content></content>
 
   </template>
 </dom-module>
@@ -27400,8 +27418,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       paper-material {
         border-radius: inherit;
-        width: 100%;
-        height: 100%;
+        @apply(--layout-fit);
       }
 
       /* IE 10 support for HTML5 hidden attr */
@@ -27448,16 +27465,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <paper-material animated$="[[animatedShadow]]" elevation="[[elevation]]">
-      <div class="header">
-        <img hidden$="[[!image]]" src="[[image]]">
-        <div hidden$="[[!heading]]" class$="[[_computeHeadingClass(image)]]">[[heading]]</div>
-      </div>
+    <paper-material animated$="[[animatedShadow]]" elevation="[[elevation]]"></paper-material>
 
-      <content></content>
+    <div class="header">
+      <img hidden$="[[!image]]" src="[[image]]">
+      <div hidden$="[[!heading]]" class$="[[_computeHeadingClass(image)]]">[[heading]]</div>
+    </div>
 
-    </paper-material>
-
+    <content></content>
   </template>
 
 </dom-module>
@@ -30068,7 +30083,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="container card-container flex relative layout vertical">
       <div class="card">
         <div class="card-content">
-          <span>The biggest Google related event in Ukraine carefully crafted for you by GDG community! Awesome speakers and lot's of fun! This time, right in the heart of Lviv!</span>
+          <span>The biggest Google related event in Myanmar carefully crafted for you by GDG community! Awesome speakers and lot's of fun! This time, right in the heart of Yangon!</span>
         </div>
         <div class="card-content">
           <a class="bottom-link" data-route="about" href="/about">See DevFest 2014</a>
@@ -30437,8 +30452,8 @@ Polymer({
             }
 
             .logo-img {
-                height: 60px;
-                width: 140px;
+                height: 100px;
+                width: 200px;
             }
         </style>
         <iron-ajax auto="" url="[[source]]" handle-as="json" on-response="logosLoaded" debounce-duration="300"></iron-ajax>
@@ -30456,9 +30471,6 @@ Polymer({
                     </div>
                 </div>
             </template>
-            <a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" class="block-link" target="_blank" onclick="ga('send', 'become-a-partner', 'button', 'click');">
-                <paper-button class="colorful" raised="">Become a partner</paper-button>
-            </a>
         </div>
     </template>
 </dom-module>
@@ -30666,7 +30678,7 @@ Polymer({
         <div class="container footer layout vertical">
             <div class="footer-content layout horizontal justified">
                 <div class="flex gplus">
-                    <g:plusone size="medium" width="200" annotation="inline" href="http://devfest.gdg.org.ua/"></g:plusone>
+                    <g:plusone size="medium" width="200" annotation="inline" href="http://devfest.gdgyangon.org/"></g:plusone>
                 </div>
                 <paper-button class="footer-backtotop" on-tap="backToTop" noink="">
                     Back to top
@@ -30679,43 +30691,40 @@ Polymer({
                         <span class="link-block-title block">For visitors</span>
                         <ul class="link-block">
                             <li><a href="https://developers.google.com/" target="_blank">Google Developers</a></li>
-                            <li><a href="http://gdg-devfest-ua.appspot.com/" target="_blank">GDG DevFest Ukraine 2013</a></li>
-                            <li><a href="/2014" target="_blank">GDG DevFest Ukraine 2014</a></li>
+                            <!-- <li><a href="http://gdg-devfest-ua.appspot.com/" target="_blank">GDG DevFest Ukraine 2013</a></li> -->
+                            <!-- <li><a href="/2014" target="_blank">GDG DevFest Ukraine 2014</a></li> -->
                             <li><a href="/code-of-conduct">Code of Conduct</a></li>
                         </ul>
                     </div>
-                    <div class="flex link-block-wrapper">
-                        <span class="link-block-title block">For partners</span>
-                        <ul class="link-block">
-                            <li><a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" target="_blank">Partnership Proposition</a></li>
-                            <li><a href="http://bit.ly/dfua-media" target="_blank">Media Kit</a></li>
-                        </ul>
-                    </div>
+                    <!-- <div class="flex link-block-wrapper"> -->
+                    <!--     <span class="link-block-title block">For partners</span> -->
+                    <!--     <ul class="link-block"> -->
+                    <!--         <li><a href="/assets/GDG_DevFest_Ukraine_2015_Partnership_Proposition.pdf" target="_blank">Partnership Proposition</a></li> -->
+                    <!--         <li><a href="http://bit.ly/dfua-media" target="_blank">Media Kit</a></li> -->
+                    <!--     </ul> -->
+                    <!-- </div> -->
                     <div class="flex link-block-wrapper">
                         <span class="link-block-title block">Contact us</span>
                         <ul class="link-block">
-                            <li><a href="mailto:devfest@gdg.org.ua">devfest@gdg.org.ua</a></li>
+                            <li><a href="mailto:yelinnwai@gmail.com">yelinnwai@gmail.com</a></li>
                         </ul>
                         <div class="icons-wrapper align-pb-block">
-                            <a href="https://plus.google.com/102444623953913144164" target="_blank">
+                            <a href="https://plus.google.com/105530023682923117858" target="_blank">
                                 <paper-icon-button icon="app-icons:glus"></paper-icon-button>
                             </a>
-                            <a href="https://www.facebook.com/GDGLviv" target="_blank">
+                            <a href="https://www.facebook.com/gdgyangon" target="_blank">
                                 <paper-icon-button icon="app-icons:facebook"></paper-icon-button>
                             </a>
-                            <a href="https://twitter.com/gdglviv" target="_blank">
+                            <a href="https://twitter.com/gdgyangon" target="_blank">
                                 <paper-icon-button icon="app-icons:twitter"></paper-icon-button>
-                            </a>
-                            <a href="https://www.linkedin.com/company/google-developers-group-lviv" target="_blank">
-                                <paper-icon-button icon="app-icons:linkedin"></paper-icon-button>
                             </a>
                         </div>
                     </div>
-                    <div class="flex">
+<!--                     <div class="flex">
                         <span class="link-block-title block">Subscribe</span>
                         <span>No spam, only the latest news and updates!</span>
                         <mailchimp-subscribe url="{{url}}" name="{{name}}"></mailchimp-subscribe>
-                    </div>
+                    </div> -->
                 </nav>
             </div>
             <!-- <div class="line full-width"></div> -->
@@ -30962,8 +30971,7 @@ Yangon, Myanmar</p>
             }
         </style>
         <div class="container container-narrow flex relative layout vertical-horizontal center-center">
-            <h4 class="heading flex text self-center text-center">GDG DevFest 2014</h4>
-             <paper-button class="white border-button open-dialog-button" on-tap="playVideo">See how it was</paper-button>
+            <h4 class="heading flex text self-center text-center">GDG DevFest 2015</h4>
         </div>
         <paper-dialog class="video-dialog fit" id="videoDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation">
             <paper-toolbar class="navbar-overlay fit">
