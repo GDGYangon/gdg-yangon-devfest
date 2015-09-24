@@ -1,8 +1,8 @@
 [
   {
     "id": 101,
-    "title": "Myanmar Language Primer",
-    "description": "",
+    "title": "Natural Language Processing. The good parts",
+    "description": "A look at where we are at Myanmar NLP and what more needs to be done including some low hanging fruits.",
     "speakers": [1],
     "language": "mm",
     "complexity": "Beginner",
