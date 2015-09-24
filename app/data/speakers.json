@@ -115,7 +115,7 @@
     "company": "Fairway Web Development",
     "country": "Myanmar",
     "photoUrl": "../../images/people/eimg.jpg",
-    "bio": "- Founder at Fairway Web (a web startup), Working as Project Manager (a.k.a TTMY), Web developer (know how to make website), Love to help web better (by arguing), Open source enthusiastic (use a-lot), Futurist and visionary (watched a-lot of sci-fi), Know some magics (from Harry Potter), Support Liverpool FC (whenever they win), Law student (and potential congressman)",
+    "bio": "- Founder at Fairway Web (a web startup), \n- Working as Project Manager (a.k.a TTMY), \n- Web developer (know how to make website), \n- Love to help web better (by arguing), \n- Open source enthusiastic (use a-lot), \n- Futurist and visionary (watched a-lot of sci-fi), \n- Know some magics (from Harry Potter), \n- Support Liverpool FC (whenever they win), \n- Law student (and potential congressman)",
     "tags": ["Web"],
     "socials": [{
         "name": "Website",
@@ -132,7 +132,7 @@
     }]
   } ,{ 
     "id": 7,
-    "name": "Li Jia Li",
+    "name": "Pwint Phyu Kyaw (aka Li Jia Li)",
     "title": "One core of Hexcores",
     "company": "Hexcores",
     "country": "Myanmar",

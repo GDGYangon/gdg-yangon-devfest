@@ -1,10 +1,52 @@
 GDG DevFest Yangon 2015 will be held on **October 3** in Yangon. We are pleased to announced that following speakers and titles will be presented at the conference
 
-- Ravi Chhabra 		- TBD
-- Ei Maung			- Current trends in web development
-- Soe Thiha Naung	- Experience about building Android App
-- Thar Htet			- TBD
-- Soe Thiha			- What is Google Summer of Code?
-- Myint Kyaw Thu	- TBD
+### 09:00 am - 09:45 am 
+
+Room 1 - Intro + Myanmar Language Primer by Ravi Chhabra
+
+<hr>
+
+### 10:00 am - 10:45 am
+
+Room 2 - "What is Google Summer of Code?" by Soe Thiha
+
+Room 3 - TBD by Myint Kyaw Thu
+
+<hr>
+
+### 11:00 am - 11:45 am 
+
+Room 2 - "Current trends in web development" by Ei Maung
+
+Room 3 - "Experience about building Android App" by Soe Thiha Naung 
+
+<hr>
+
+### 12:00 pm - 12:45 pm
+
+Lunch
+
+<hr>
+
+### 01:00 pm - 03:00 pm
+
+Room 2 - Code Labs 1
+
+Room 3 - Code Labs 2
+
+<hr>
+
+### 03:00 pm - 03:45 pm
+
+Room 2 - TBD by Pwint Phyu Kyaw (aka Li Jia Li)
+
+Room 3 - TBD by Htoo Myint Naung
+
+<hr>
+
+### 04:00 pm - 05:00 pm
+
+Room 1 - Closing Keynote + TBD by Thar Htet
+
 
 And more to come!

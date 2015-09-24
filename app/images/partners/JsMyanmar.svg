@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Decgon-+-JS-+-mm" sketch:type="MSLayerGroup" transform="translate(13.000000, 12.000000)">
+            <polygon id="Decgon" stroke="#33570C" stroke-width="10" fill="#7ED321" filter="url(#filter-1)" sketch:type="MSShapeGroup" points="147.5 0 275.238747 73.75 275.238747 221.25 147.5 295 19.7612529 221.25 19.7612529 73.75 "></polygon>
+            <text id="JS" sketch:type="MSTextLayer" font-family="Andale Mono" font-size="144" font-weight="normal" sketch:alignment="middle" letter-spacing="-10" fill="#FFFFFF">
+                <tspan x="47.0859375" y="214">J</tspan>
+                <tspan x="123.5" y="214">S</tspan>
+            </text>
+            <text id="mm" sketch:type="MSTextLayer" font-family="Andale Mono" font-size="36" font-weight="normal" fill="#FFFFFF">
+                <tspan x="204.5" y="209.453125">mm</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
