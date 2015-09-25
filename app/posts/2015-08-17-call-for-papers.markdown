@@ -30,9 +30,12 @@ Lunch
 
 ### 01:00 pm - 03:00 pm
 
-Room 2 - Code Labs 1
+Room 2 - Web Code Labs will be run by folks from [JS Myanmar](https://www.facebook.com/groups/node.js.myanmar).
+You will need to register at http://goo.gl/forms/yxSqdb3cTm
 
-Room 3 - Code Labs 2
+Room 3 - Android Code Labs will be run by folks from [Myanmar Android User Group](https://www.facebook.com/groups/MyanmarAndroidUserGroup/)
+You will need to register at http://goo.gl/forms/q0d2Ryaz5f
+
 
 <hr>
 
