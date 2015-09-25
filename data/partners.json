@@ -4,7 +4,7 @@
     "logos": [
       {
         "name": "Google",
-        "url": "https://www.google.com.ua/intl/en/about/",
+        "url": "https://www.google.com/intl/en/about/",
         "logoUrl": "../images/partners/google.svg"
       }
     ]
@@ -53,7 +53,7 @@
     "title": "Building Logo Thanks to ",
     "logos": [
       {
-        "name": "Yangon Redesign",
+        "name": "Yangon Redesigned",
         "url": "https://www.facebook.com/ygnredesigned",
         "logoUrl": "../images/partners/ygn.png"
       }
