@@ -41,11 +41,11 @@
   },
   {
     "id": 105,
-    "title": "TBD",
-    "description": "TBD",
+    "title": "Closing Keynote + “Values of an Engineer, Values of You!”",
+    "description": "Closing Keynote + “Values of an Engineer, Values of You!”",
     "speakers": [5],
     "language": "en",
-    "complexity": "Intermediate",
+    "complexity": "Beginner",
     "presentation": "",
     "video": ""
   },
@@ -61,8 +61,8 @@
   },
   {
     "id": 107,
-    "title": "TBD",
-    "description": "TBD",
+    "title": "Google Material Design",
+    "description": "Everything you wanna know about Google Material Design",
     "speakers": [7],
     "language": "en",
     "complexity": "Beginner",
@@ -71,11 +71,11 @@
   },
   {
     "id": 108,
-    "title": "TBD",
+    "title": "Encryptions 101",
     "description": "",
     "speakers": [8],
     "language": "en",
-    "complexity": "",
+    "complexity": "Beginner",
     "presentation": "",
     "video": ""
   }
