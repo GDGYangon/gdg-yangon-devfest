@@ -2,7 +2,7 @@ GDG DevFest Yangon 2015 will be held on **October 3** in Yangon. We are pleased 
 
 ### 09:00 am - 09:45 am 
 
-Room 1 - Intro + Myanmar Language Primer by Ravi Chhabra
+Room 1 - "Intro + Natural Language Processing, The Good Parts" by Ravi Chhabra
 
 <hr>
 
@@ -41,15 +41,15 @@ You will need to register at http://goo.gl/forms/q0d2Ryaz5f
 
 ### 03:00 pm - 03:45 pm
 
-Room 2 - TBD by Pwint Phyu Kyaw (aka Li Jia Li)
+Room 2 - "Material Deisgn for Developers" by Pwint Phyu Kyaw (aka Li Jia Li)
 
-Room 3 - TBD by Htoo Myint Naung
+Room 3 - "Encryption 101" by Htoo Myint Naung
 
 <hr>
 
 ### 04:00 pm - 05:00 pm
 
-Room 1 - Closing Keynote + TBD by Thar Htet
+Room 1 - Closing Keynote + "Values of an Engineer, Values of You" by Thar Htet
 
 
 And more to come!
