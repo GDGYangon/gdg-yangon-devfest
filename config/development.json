@@ -1,15 +1,15 @@
 {
   "basepath": "/",
-  "url": "https://hoverboard-dev.firebaseapp.com/",
+  "url": "https://gdg-yangon-e49f9.firebaseapp.com/",
   "analytics": "UA-43643469-8",
   "prefix": "/",
   "firebase": {
-    "apiKey": "AIzaSyBu9LI-hY4NfUOPJJKuV3BfQm7edLr2-aE",
-    "authDomain": "hoverboard-dev.firebaseapp.com",
-    "databaseURL": "https://hoverboard-dev.firebaseio.com",
-    "projectId": "hoverboard-dev",
-    "storageBucket": "hoverboard-dev.appspot.com",
-    "messagingSenderId": "1083195713896"
+    "apiKey": "AIzaSyD2lml4uG_EyYuYG8Kd8iNPKcloVp5pbTI",
+    "authDomain": "gdg-yangon-e49f9.firebaseapp.com",
+    "databaseURL": "https://gdg-yangon-e49f9.firebaseio.com",
+    "projectId": "gdg-yangon-e49f9",
+    "storageBucket": "gdg-yangon-e49f9.appspot.com",
+    "messagingSenderId": "757140199009"
   },
   "googleMapApiKey": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw"
 }
