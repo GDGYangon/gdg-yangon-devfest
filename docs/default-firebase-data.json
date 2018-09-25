@@ -47,14 +47,14 @@
     }
   },
   "gallery" : [
-    "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fgallery%2Fimg_4185.jpg?alt=media&token=ff3fd161-3d68-401a-90cd-74b90bd2a4d8",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipMtwzKeoBrXO_SnTsVkfpTF8lXWNqiv9oOXazh1?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipMaMJgJQcxuGbI9ZpFiXBxZN0r6zK4cUkBBQlUU?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipNA8c7Wz4ApHNwbKZZ8wpBnI0qJdJnxKMzSEUuk?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipPyfeF0_-MKq_ztDEpMBMuUB6k9Wyv5js4WRjfK?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipNBMg0oLQCmbLL8McINFCnXsBZmobSnUgHXbyn3?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipMoiZLjFTD4tCvTN9lMpr1KLl8dMK7_NVAzeqIg?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB",
-    "https://photos.google.com/share/AF1QipPcEjJxY6Hkat9j0FL0s0HuYsYd1iBRySsUQXRyNMvdSmedpJTeg41B-kAUJOj09Q/photo/AF1QipP_BgoS9AUEadry-ypJISPrQgVsdpzssjaXBK8U?key=Vmw5aG5rZENPQTF6eXJ4N3N1UHJGLTlIUjRGU3hB"
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/DSC_5323.jpg?alt=media&token=45c3711b-29b5-4b7a-8454-5c13b37a3cff",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/DSC_5544.jpg?alt=media&token=e809fe83-588a-45cb-843c-021933915318",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_0840.JPG?alt=media&token=2e5ff83f-cef7-4cb4-b3d6-d1f3de1b35b2",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_0848.JPG?alt=media&token=5b10edde-61f6-4efe-aceb-f5db53c3d27d",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_1059.JPG?alt=media&token=24830867-df0b-4b20-9983-bf916a914d2e",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_1079.JPG?alt=media&token=79a03e17-9c21-4e82-b4a4-5f4a32d97821",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_1324.JPG?alt=media&token=3c339a53-8f83-4342-9d3f-123e75468eae",
+    "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/IMG_1300.JPG?alt=media&token=6ee6147b-bf2c-48f2-aabc-4e8d877a5948"
   ],
   "notifications" : {
     "config" : {
