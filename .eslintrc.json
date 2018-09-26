@@ -19,6 +19,7 @@
     "brace-style": "off",
     "new-cap": "off",
     "no-var": "off",
+    "indent":"off",
     "require-jsdoc": "off",
     "max-len": ["error", { "code": 100 }],
     "object-curly-spacing": ["error", "always"],
