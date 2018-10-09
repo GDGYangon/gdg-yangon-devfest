@@ -1437,205 +1437,173 @@
   },
   "team" : [ {
     "members" : [ {
-      "name" : "Oleh Zasadnyy",
-      "photo" : "/images/people/oleh_zasadnyy.jpg",
-      "photoUrl" : "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/oleh_zasadnyy.jpg",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+OlehZasadnyy",
-        "name" : "Google+"
-      }, {
+      "name" : "Nyi Nyi Lin",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fnyinyilin.jpg?alt=media&token=e18cc9b3-2bdb-4029-9342-fc8887c34b38",
+      "socials" : [{
         "icon" : "facebook",
-        "link" : "https://www.facebook.com/oleh.zasadnyy",
-        "name" : "Facebook"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/ozasadnyy",
-        "name" : "Twitter"
-      }, {
-        "icon" : "website",
-        "link" : "http://o.zasadnyy.com/",
-        "name" : "Blog"
-      } ],
-      "title" : "Website and sponsors"
-    }, {
-      "name" : "Sofiya Huts",
-      "photo" : "/images/people/sofiya_huts.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fsofiya_huts.jpg?alt=media&token=a911eafb-f709-4af7-b1cb-58a6604b70d1",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+SofiaHuts",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/sophie.huts.7",
+        "link" : "https://www.facebook.com/nyinyilinyu",
         "name" : "Facebook"
       } ],
-      "title" : "Social and media"
+      "title" : "Co-Community Manager"
     }, {
-      "name" : "Vitaliy Zasadnyy",
-      "photo" : "/images/people/vitaliy_zasadnyy.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvitaliy_zasadnyy.jpg?alt=media&token=930e05c8-ae43-4628-8d4c-3e8f5193cda3",
-      "socials" : [ {
-        "icon" : "linkedin",
-        "link" : "https://www.linkedin.com/in/zasadnyy",
-        "name" : "Linkedin"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/zasadnyy",
-        "name" : "Twitter"
-      }, {
-        "icon" : "website",
-        "link" : "http://v.zasadnyy.com/",
-        "name" : "Blog"
-      } ],
-      "title" : "Speakers"
-    }, {
-      "name" : "Marta Maxymiak",
-      "photo" : "/images/people/marta_maxymiak.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fmarta_maxymiak.jpg?alt=media&token=6532f039-7f86-4304-8558-dbfbb3ae8d68",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/104036874811391520583",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/marta.maxymiak",
-        "name" : "Facebook"
-      } ],
-      "title" : "Party and happiness"
-    }, {
-      "name" : "Ostap Andrusiv",
-      "photo" : "/images/people/ostap_andrusiv.jpg",
-      "photoUrl" : "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/ostap_andrusiv.jpg",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://google.com/+OstapAndrusiv",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/ostap.andrusiv",
-        "name" : "Facebook"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/p1f",
-        "name" : "Twitter"
-      }, {
-        "icon" : "website",
-        "link" : "http://andrusiv.com/",
-        "name" : "Blog"
-      } ],
-      "title" : "Sponsors"
-    }, {
-      "name" : "Vasylyna Mytsak",
-      "photo" : "/images/people/vasylyna_mytsak.jpg",
-      "photoUrl" : "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/vasylyna_mytsak.jpg",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+ВасилинаМицак",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/vasylyna.mytsak",
-        "name" : "Facebook"
-      } ],
-      "title" : "Party and happiness"
-    }, {
-      "name" : "Volodya Karpliuk",
-      "photo" : "/images/people/volodya_karpliuk.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvolodya_karpliuk.jpg?alt=media&token=aa08d9c9-c42a-435f-8672-c3a004e3aa08",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+VolodyaKarpliuk23",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/volodya.karpluk",
-        "name" : "Facebook"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/keyv23",
-        "name" : "Twitter"
-      } ],
-      "title" : "Speakers"
-    }, {
-      "name" : "Diana Pinchuk",
-      "photo" : "/images/people/diana_pinchuk.jpg",
-      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+DianaPinchuk",
-        "name" : "Google+"
-      }, {
-        "icon" : "facebook",
-        "link" : "https://www.facebook.com/diana.pinchuk.9",
-        "name" : "Facebook"
-      } ],
-      "title" : "Social and media"
-    } ],
-    "title" : "Core Team"
-  }, {
-    "members" : [ {
-      "name" : "Ihor Dvoretskyi",
-      "photo" : "/images/people/ihor_dvoretskyi.jpg",
-      "photoUrl" : "",
+      "name" : "Min Theingi Kyaw @ Ouware",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fooware.jpg?alt=media&token=cb6b3d33-60b8-48d3-a235-da137c18ae98",
       "socials" : [ {
         "icon" : "facebook",
-        "link" : "https://www.facebook.com/idvoretskyi",
+        "link" : "https://www.facebook.com/Ouware",
         "name" : "Facebook"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/idvoretskyi",
-        "name" : "Twitter"
       } ],
-      "title" : "Cloud stream"
+      "title" : "Lead Organizer"
+    },{
+      "name" : "Zune Moe Thet Htar",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fzunemoethethtar.jpg?alt=media&token=3eb45bd3-6223-4aaa-aa63-0fff8ebeedbc",
+      "socials" : [{
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/profile.php?id=100008592063447",
+        "name" : "Facebook"
+      }],
+      "title" : "Organizer"
     }, {
-      "name" : "Dmytro Danylyk",
-      "photo" : "/images/people/dmytro_danylyk.jpg",
-      "photoUrl" : "",
-      "socials" : [ {
-        "icon" : "gplus",
-        "link" : "https://plus.google.com/+DmytroDanylyk",
-        "name" : "Google+"
-      }, {
-        "icon" : "twitter",
-        "link" : "https://twitter.com/dmytrodanylyk",
-        "name" : "Twitter"
-      }, {
-        "icon" : "website",
-        "link" : "http://www.dmytrodanylyk.com/#/about",
-        "name" : "Website"
+      "name" : "Ei Phyu Phyu Zaw",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Feiphyuphyuzaw.jpg?alt=media&token=3c8d8dfc-088f-4705-9582-42cb60e5d6d6",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/profile.php?id=100013762693554",
+        "name" : "Facebook"
       } ],
-      "title" : "Android Stream"
-    } ],
-    "title" : "Program Committee"
-  } ],
-  "tickets" : [  {
-    "available" : true,
-    "currency" : "Ks",
-    "ends" : "OCT 10",
-    "inDemand" : false,
-    "info" : "Or first 200 tickets",
-    "name" : "Early Bird",
-    "price" : 8000,
-    "primary":true,
-    "regular" : true,
-    "soldOut" : false,
-    "starts" : "OCT 1",
-    "url" : "#"
-  }, {
+      "title" : "Organizer"
+    },{
+      "name" : "Win Lei Thwe",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fwinlei.jpg?alt=media&token=216473dd-8e60-4b51-b3a2-2badb9fff23a",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/profile.php?id=100005373675465",
+        "name" : "Facebook"
+      } ],
+      "title" : "Organizer"
+    },{
+      "name" : "Kay Kay Min",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fkkmin.jpg?alt=media&token=16342e54-7601-41ed-a3e3-d34b6b2a0ce3",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/kkmin.lwin",
+        "name" : "Facebook"
+      } ],
+      "title" : "Organizer"
+    },{
+      "name" : "Paing Min Htun",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fpainggyee.jpg?alt=media&token=ede30514-376b-4d35-9538-27b1e5cc25f0",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/paingminhtun.pmt?ref=br_rs",
+        "name" : "Facebook"
+      } ],
+      "title" : "Organizer"
+    },{
+      "name" : "Si Thu San",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fsithusan.jpg?alt=media&token=0ce6a3fd-47ed-4581-bba6-e61415dbbbf7",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/khinmg.htwe.146",
+        "name" : "Facebook"
+      } ],
+      "title" : "Organizer"
+    },{
+      "name" : "Thant Thazin Eain",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fthantthazineain.jpg?alt=media&token=9bd60a11-8726-436e-930f-c99319b198a6",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/thantthazin.eain.5",
+        "name" : "Facebook"
+      } ],
+      "title" : "Organizer"
+    },{
+      "name" : "Aung Win Thant",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fawt.jpg?alt=media&token=b24c31b8-db69-400e-aeb3-8590475dcb7e",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/aungwin.thant.75",
+        "name" : "Facebook"
+      } ],
+      "title" : "Websites and Speakers"
+    }
+    ],
+
+    "title" : "Organizer Team"
+  },{
+    "members": [{
+        "name" : "Aung Sann Thit",
+        "photo" : "#",
+        "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Faungsanthit.jpg?alt=media&token=83cd9b52-16f8-45da-9e8a-747486c5869b",
+        "socials" : [{
+          "icon" : "facebook",
+          "link" : "https://www.facebook.com/aungsan.thit.9",
+          "name" : "Facebook"
+        }],
+        "title" : "Social Media"
+      }, {
+        "name" : "Zwe Naung Kyaw",
+        "photo" : "#",
+        "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fzawnaungkyaw.jpg?alt=media&token=3bc4cb32-1f6b-4b47-8cb2-91d54c6b30d5",
+        "socials" : [  {
+          "icon" : "facebook",
+          "link" : "https://www.facebook.com/zwe.naung.58760",
+          "name" : "Facebook"
+        } ],
+        "title" : "Designer"
+    },
+    {
+      "name" : "Thet Htar",
+      "photo" : "#",
+      "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fthethtar.jpg?alt=media&token=69ddd452-3f89-439c-bb35-41674fc68d9b",
+      "socials" : [  {
+        "icon" : "facebook",
+        "link" : "https://www.facebook.com/thet.htar.FS",
+        "name" : "Facebook"
+      } ],
+      "title" : "Media"
+    }],
+    "title":"Media and Design"
+  },{
+    "members":[
+      {
+        "name" : "Hein Htet Zaw",
+        "photo" : "#",
+        "photoUrl" : "https://firebasestorage.googleapis.com/v0/b/gdg-yangon-e49f9.appspot.com/o/team%2Fheinhtetzaw.jpg?alt=media&token=501ede6a-e59c-4f3b-8287-0e29bcfd69a6",
+        "socials" : [{
+          "icon" : "facebook",
+          "link" : "https://www.facebook.com/stevenzaw1999",
+          "name" : "Facebook"
+        } ],
+        "title" : "Sponsors and Partners"
+      }
+    ],
+    "title":"Sponsors and Partnerships"
+  }],
+
+  "tickets" : [{
     "available" : true,
     "currency" : "Ks",
     "ends" : "OCT 27",
     "inDemand" : false,
-    "info" : "Or first 350 tickets",
+    "info" : "<3 We Love You",
     "name" : "Regular",
     "price" : 10000,
     "primary" : true,
     "regular" : true,
     "soldOut" : false,
     "starts" : "OCT 1",
-    "url" : "#"
+    "url" : "https://goo.gl/forms/BWZ3EafeEydJvBLV2"
   } ],
   "triggers" : {
     "images" : false

@@ -4,7 +4,7 @@
     "twitter": "gdgyangon",
     "url": "https://gdgyangon.org"
   },
-  "startDate": "2018-10-27T09:00:00+03:00",
+  "startDate": "2018-10-28T09:00:00+03:00",
   "endDate": "2017-10-28T19:00:00+03:00",
   "webapp": {
     "shortName": "DevFest",
@@ -163,7 +163,7 @@
       }
     ]
   },
-  "mailto": "devfest@gdgyangon.org",
+  "mailto": "gdgyangon@gmail.com",
   "mailchimp": {
     "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
     "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
