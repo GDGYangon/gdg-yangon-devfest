@@ -95,11 +95,11 @@
       },
       "sessions": {
         "label": "Sessions",
-        "number": "-"
+        "number": "11"
       },
       "tracks": {
         "label": "Tracks",
-        "number": "-"
+        "number": "2"
       }
     }
   },
@@ -220,7 +220,7 @@
     "blocks": [
       {
         "title": "Organizer",
-        "description": "<a href='http://www.gdgyangon.org' target='_blank'>GDG Yangon</a> is proud organizer of GDGYangon",
+        "description": "<a href='http://www.gdgyangon.org' target='_blank'>GDG Yangon</a> is proud organizer of GDG Devfest Yangon 2018",
         "callToAction": {
           "label": "Open team page",
           "link": "/team"
